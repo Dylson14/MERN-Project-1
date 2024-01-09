@@ -1,19 +1,22 @@
 import React from "react";
 
-import UsersList from "../components/UserList";
+import UsersList from "../components/UsersList";
 
 const Users = () => {
   const USERS = [
     {
       id: "u1",
       name: "Jake",
-      image:
-        "https://static.wikia.nocookie.net/every-universe/images/b/b3/Jake.png/revision/latest?cb=20170417013215",
+      image:"https://fastly.picsum.photos/id/1/200/300.jpg?hmac=jH5bDkLr6Tgy3oAg5khKCHeunZMHq0ehBZr6vGifPLY",
       places: 3,
     },
   ];
 
-  return <UsersList items={USERS} />;
+  return (
+    <div>
+      <UsersList items={USERS} />;
+    </div>
+  );
 };
 
 export default Users;
